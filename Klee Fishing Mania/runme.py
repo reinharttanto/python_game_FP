@@ -97,6 +97,7 @@ again_button = button(177, 600, AGAINBUTTON)
 quit_button2 = button(490, 600, QUITBUTTON)
 
 def start_screen():
+    pygame.init()
     sub = font2.render("Game By Rein", False, (255, 150, 150))
     starting = True
     started = False
@@ -175,6 +176,7 @@ def draw_window_game(klee_pos, bombs, fishes1, bomb_fill, fish_caught, BOMBS_LEF
 
 
 def endscreen(fish_caught):
+    pygame.init()
     sub = font2.render("Game By Rein", False, (255, 150, 150))
     clock = pygame.time.Clock()
     fishc = "Fishes Caught: " + str(fish_caught[0])
@@ -194,6 +196,7 @@ def endscreen(fish_caught):
     
 
 def main():
+    pygame.init()
     klee_pos = pygame.Rect(640, 540, 100, 100) #klee position starting
     klee_pos1 = pygame.Rect(640, 540, 100, 100)
 
